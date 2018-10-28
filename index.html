@@ -17,13 +17,13 @@
         var lista = document.querySelector("#lista");
         li = document.createElement("li");
         li.textContent="item";
-        lista.appendChild(li);
+        lista.appendChild(li);//add filhos li a lista ul
     }
 
     function remove(){
-        var items = document.querySelector("#lista");        
-        if (items.childNodes[0]) {            
-            items.removeChild(items.childNodes[0]);
+        var lista = document.querySelector("#lista");        
+        if (lista.childNodes[0]) {  //verificando se existem filhos na lista        
+            lista.removeChild(lista.childNodes[0]);//remove da lista o primeiro filho da lista.
         } else {
             alert("Desculpe, mas não há mais item para ser removido");
         }
